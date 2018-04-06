@@ -16,11 +16,7 @@ class Dashboard extends Component {
       title3:"",
       imgUrl1:"",
       imgUrl2:"",
-      imgUrl3:"",
-      categories1:"",
-      categories2:"",
-      categories3:"",
-
+      imgUrl3:""
     };
     this.componentDidMount = this.componentDidMount.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -40,7 +36,6 @@ class Dashboard extends Component {
   }
 
   componentDidUpdate() {
-    console.log(this.state.categories1);
   }
 
   setPosition(position) {
@@ -61,8 +56,7 @@ class Dashboard extends Component {
       })
       .then(json => this.setState({ title1: json.businesses[0].name, imgUrl1: json.businesses[0].image_url,
                                     title2: json.businesses[1].name, imgUrl2: json.businesses[1].image_url,
-                                    title3: json.businesses[2].name, imgUrl3: json.businesses[2].image_url,
-                                  categories1:json.businesses[0].categories}))
+                                    title3: json.businesses[2].name, imgUrl3: json.businesses[2].image_url}))
       .catch(function(error) {
          console.log(error);
       });
