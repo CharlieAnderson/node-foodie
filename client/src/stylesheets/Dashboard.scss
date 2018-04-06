@@ -1,0 +1,29 @@
+$foodie-pink: RGBA(250, 70, 176, 1.00);
+$foodie-blue: RGBA(25, 181, 254, 1);
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.Dashboard {
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+    background: $foodie-pink;
+    color: white;
+    border-radius: 5px;
+}
+
+.Dashboard-header {
+    padding: 10px;
+    margin: 10px 0;
+    height: 1em;
+    font-size: 2em;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+.Dashboard-content {
+    height: 100%;
+    padding: 10px;
+    background: $foodie-blue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

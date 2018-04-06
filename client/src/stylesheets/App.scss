@@ -1,0 +1,34 @@
+$foodie-pink: RGBA(250, 70, 176, 1.00);
+$foodie-blue: RGBA(25, 181, 254, 1);
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 70px;
+}
+
+.App-header {
+  background-color: $foodie-pink;
+  height: 150px;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  margin: 10px;
+  font-size: 2.5em;
+  font-family: Pacifico;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

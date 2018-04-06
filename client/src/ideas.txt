@@ -1,0 +1,7 @@
+TODO
+
+ideas:
+
+- have a mode to show random food/dishes from restaurants, and have user select what looks good fromt that
+- have a picking game where users take turns eliminating options
+- have a no thanks button to generate new suggestions
