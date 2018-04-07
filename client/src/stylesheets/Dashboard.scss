@@ -6,9 +6,9 @@ $foodie-blue: RGBA(25, 181, 254, 1);
     width: 80%;
     height: 600px;
     margin: 20px auto;
-    background: $foodie-pink;
     color: white;
     border-radius: 5px;
+    background: $foodie-blue;
 }
 
 .Dashboard-header {
@@ -17,11 +17,13 @@ $foodie-blue: RGBA(25, 181, 254, 1);
     height: 1em;
     font-size: 2em;
     font-family: sans-serif;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding:25px;
+    background: $foodie-pink;
 }
 
 .Dashboard-content {
-    height: 100%;
     padding: 10px;
     background: $foodie-blue;
     border-bottom-left-radius: 5px;

@@ -8,8 +8,8 @@ body {
 }
   
 .Widget {
-    width: 300px;
-    height: 250px;
+    width: 15em;
+    height: 12em;
     margin: 2em 1em;
     padding: 1em 3em;
     transition: 250ms;
@@ -87,8 +87,8 @@ body {
 }
 
 .Widget-header {
-    margin: 10px;
-    padding:10px;
+    margin: 5px;
+    padding:5px;
 }
 
 .Widget-content {
@@ -104,10 +104,10 @@ body {
 }
 
 .Widget-img {
-    margin:20px;
+    margin:5px;
     border-radius: 5px;
-    width: 225px; 
-    height: 150px;
+    width: 12em; 
+    height: 9em;
 }
 
 @keyframes fadein {
