@@ -18,8 +18,10 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 })); 
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
 }
+
+app.use(express.static('client/build'));
+
 
 app.get('/api/search/:latitude/:longitude/:query', (req, res) => {
   var query = "term="+req.params.query;
