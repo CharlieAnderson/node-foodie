@@ -8,10 +8,8 @@ body {
 }
   
 .Widget {
-    width: 15em;
-    height: 12em;
     margin: 2em 1em;
-    padding: 1em 3em;
+    padding: 1em;
     transition: 250ms;
     -webkit-appearance: none;
 	box-shadow: 0 5px 15px 0 RGBA(250, 70, 176, 1.00);
@@ -20,10 +18,9 @@ body {
     background-size: 100%;
     background-clip: padding-box;
     position: relative;
-    color: white;
-    font-family: sans-serif;
-    background-image: linear-gradient(0deg, $gradient-pink, $gradient-yellow);
 
+    background-image: linear-gradient(0deg, $gradient-pink, $gradient-yellow);
+/*
     &:before {
         content: "";
         width: 100%;
@@ -49,17 +46,25 @@ body {
         filter: blur(14px);
         background-image: linear-gradient(0deg, transparent, $gradient-yellow);
     }
-    &:hover {
-        transform: scale(1.05) translate(0, -5px);
-        box-shadow: 0px 5px 20px 0 RGBA(250, 70, 176, 1.00);
+
+    */
+    & .Widget-img:hover {
+        transform: scale(1.55) translate(0, -5px);
         cursor: pointer;
     }
-    &:active {
+    & .Widget-img:active {
         transform: scale(.95) translate(0, 0px);
-        box-shadow: 0 2px 5px 0 RGBA(250, 70, 176, 1.00);
 
     }
+
+    & .Widget-map:hover {
+        //transform: scale(1.55) translate(0, -5px);
+        width: 24em;
+        height: 24em;
+    }
+
 }
+
 
 .Widget:nth-child(1) {
     animation-delay: 0s;
@@ -88,11 +93,24 @@ body {
 
 .Widget-header {
     margin: 5px;
-    padding:5px;
+    padding: 5px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.6em;
 }
 
 .Widget-content {
     margin: 5px;
+}
+
+.Widget-map {
+    transition: 250ms;
+    display: inline;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 15em; 
+    height: 12em;
 }
 
 .visible {
@@ -104,10 +122,11 @@ body {
 }
 
 .Widget-img {
+    transition: 250ms;
     margin:5px;
     border-radius: 5px;
-    width: 12em; 
-    height: 9em;
+    width: 15em; 
+    height: 12em;
 }
 
 @keyframes fadein {

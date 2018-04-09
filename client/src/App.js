@@ -19,8 +19,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Foodie</h1>
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1 className="App-title">Welcome to Foodie</h1>
+        <img src={logo} className="App-logo" alt="logo" />
         </header>
         <Dashboard title={this.state.title} imgUrl={this.state.imgUrl}/>
       </div>

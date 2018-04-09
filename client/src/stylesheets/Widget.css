@@ -4,10 +4,8 @@ body {
   background: none; }
 
 .Widget {
-  width: 300px;
-  height: 250px;
   margin: 2em 1em;
-  padding: 1em 3em;
+  padding: 1em;
   transition: 250ms;
   -webkit-appearance: none;
   box-shadow: 0 5px 15px 0 RGBA(250, 70, 176, 1);
@@ -16,38 +14,43 @@ body {
   background-size: 100%;
   background-clip: padding-box;
   position: relative;
-  color: white;
-  font-family: sans-serif;
-  background-image: linear-gradient(0deg, RGBA(250, 70, 176, 1), RGBA(250, 70, 106, 1)); }
-  .Widget:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    border-radius: 50px;
-    z-index: -1;
-    filter: blur(14px);
-    background-image: linear-gradient(0deg, RGBA(250, 70, 176, 1), transparent); }
-  .Widget:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    border-radius: 50px;
-    z-index: -1;
-    filter: blur(14px);
-    background-image: linear-gradient(0deg, transparent, RGBA(250, 70, 106, 1)); }
-  .Widget:hover {
-    transform: scale(1.05) translate(0, -5px);
-    box-shadow: 0px 5px 20px 0 RGBA(250, 70, 176, 1);
+  background-image: linear-gradient(0deg, RGBA(250, 70, 176, 1), RGBA(250, 70, 106, 1));
+  /*
+    &:before {
+        content: "";
+        width: 100%;
+        height:100%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        border-radius: 50px;
+        z-index: -1;
+        filter: blur(14px);
+        background-image: linear-gradient(0deg, $gradient-pink, transparent);
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height:100%;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        border-radius: 50px;
+        z-index: -1;
+        filter: blur(14px);
+        background-image: linear-gradient(0deg, transparent, $gradient-yellow);
+    }
+
+    */ }
+  .Widget .Widget-img:hover {
+    transform: scale(1.55) translate(0, -5px);
     cursor: pointer; }
-  .Widget:active {
-    transform: scale(0.95) translate(0, 0px);
-    box-shadow: 0 2px 5px 0 RGBA(250, 70, 176, 1); }
+  .Widget .Widget-img:active {
+    transform: scale(0.95) translate(0, 0px); }
+  .Widget .Widget-map:hover {
+    width: 24em;
+    height: 24em; }
 
 .Widget:nth-child(1) {
   animation-delay: 0s;
@@ -86,11 +89,23 @@ body {
   /* Opera < 12.1 */ }
 
 .Widget-header {
-  margin: 10px;
-  padding: 10px; }
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.6em; }
 
 .Widget-content {
   margin: 5px; }
+
+.Widget-map {
+  transition: 250ms;
+  display: inline;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 15em;
+  height: 12em; }
 
 .visible {
   display: inline-block; }
@@ -99,10 +114,11 @@ body {
   display: none; }
 
 .Widget-img {
-  margin: 20px;
+  transition: 250ms;
+  margin: 5px;
   border-radius: 5px;
-  width: 225px;
-  height: 150px; }
+  width: 15em;
+  height: 12em; }
 
 @keyframes fadein {
   from {

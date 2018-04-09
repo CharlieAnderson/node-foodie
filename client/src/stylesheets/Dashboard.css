@@ -3,21 +3,24 @@
   width: 80%;
   height: 600px;
   margin: 20px auto;
-  background: RGBA(250, 70, 176, 1);
   color: white;
-  border-radius: 5px; }
+  border-radius: 5px;
+  background: RGBA(25, 181, 254, 1); }
 
 .Dashboard-header {
-  padding: 10px;
-  margin: 10px 0;
+  padding: 5px;
+  margin: 5px 0;
   height: 1em;
   font-size: 2em;
   font-family: sans-serif;
-  border-radius: 5px; }
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 25px;
+  background: RGBA(250, 70, 176, 1); }
 
 .Dashboard-content {
-  height: 100%;
   padding: 10px;
   background: RGBA(25, 181, 254, 1);
   border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 5px 15px 0 RGBA(25, 181, 254, 1); }

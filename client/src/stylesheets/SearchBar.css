@@ -11,6 +11,7 @@
   width: 80%;
   height: 38px;
   font-size: 18px;
+  box-shadow: 0 2px 5px 0 RGBA(25, 181, 254, 1);
   border: 3px solid RGBA(25, 181, 254, 1);
   border-radius: 5px;
   outline: none;
@@ -26,6 +27,7 @@
   width: 150px;
   border: 4px solid RGBA(25, 181, 254, 1);
   background: RGBA(25, 181, 254, 1);
+  box-shadow: 0 2px 5px 0 RGBA(25, 181, 254, 1);
   text-align: center;
   outline: none;
   color: #fff;

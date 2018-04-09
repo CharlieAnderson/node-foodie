@@ -7,18 +7,33 @@ $foodie-blue: RGBA(25, 181, 254, 1);
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 10s linear;
+  display: inline;
   height: 70px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.App-logo:nth-of-type(1) {
+  animation: App-logo-spin-counter infinite 8s ease-in-out;
+}
+
+.App-logo:nth-of-type(2) {
+  animation: App-logo-spin-clockwise infinite 8s ease-in-out;
 }
 
 .App-header {
   background-color: $foodie-pink;
-  height: 150px;
+  height: 70px;
   padding: 10px;
   color: white;
+  box-shadow: 0 5px 15px 0 RGBA(250, 70, 176, 1.00);
+
 }
 
 .App-title {
+  display: inline;
+  vertical-align: middle;
+
   margin: 10px;
   font-size: 2.5em;
   font-family: Pacifico;
@@ -28,7 +43,12 @@ $foodie-blue: RGBA(25, 181, 254, 1);
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+@keyframes App-logo-spin-clockwise {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes App-logo-spin-counter {
+	0%  {transform: rotate(360deg);}
+	100% {transform: rotate(0deg);}	
 }

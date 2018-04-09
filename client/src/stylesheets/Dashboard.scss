@@ -12,8 +12,8 @@ $foodie-blue: RGBA(25, 181, 254, 1);
 }
 
 .Dashboard-header {
-    padding: 10px;
-    margin: 10px 0;
+    padding: 5px;
+    margin: 5px 0;
     height: 1em;
     font-size: 2em;
     font-family: sans-serif;
@@ -28,4 +28,5 @@ $foodie-blue: RGBA(25, 181, 254, 1);
     background: $foodie-blue;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    box-shadow: 0 5px 15px 0 RGBA(25, 181, 254, 1.00);
 }
