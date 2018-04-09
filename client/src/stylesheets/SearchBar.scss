@@ -38,9 +38,11 @@ $foodie-blue: RGBA(25, 181, 254, 1);
     box-shadow: 0 2px 5px 0 RGBA(25, 181, 254, 1.00);
     text-align: center;
     outline: none;
-    color: #fff;
-    border-radius: 5px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
     font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
   }
   

@@ -48,9 +48,11 @@ body {
     cursor: pointer; }
   .Widget .Widget-img:active {
     transform: scale(0.95) translate(0, 0px); }
-  .Widget .Widget-map:hover {
+
+@media only screen and (min-width: 768px) {
+  .Widget-map:hover {
     width: 24em;
-    height: 24em; }
+    height: 24em; } }
 
 .Widget:nth-child(1) {
   animation-delay: 0s;
@@ -94,7 +96,7 @@ body {
   color: white;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 1.6em; }
+  font-size: 1.2em; }
 
 .Widget-content {
   margin: 5px; }
