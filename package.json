@@ -4,7 +4,7 @@
   "scripts": {
     "start": "concurrently \"yarn server\" \"yarn client\"",
     "client": "cd react-ui && yarn start",
-    "server": "nodemon server.js",
+    "server": "node server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "heroku-postbuild": "cd react-ui && yarn --production=false && yarn run build"
 
