@@ -8,6 +8,8 @@ const yelpKey = process.env.YELP_API_KEY;
 const googlePlacesKey = process.env.GOOGLE_PLACES_API_KEY;
 const googleMapsKey = process.env.GOOGLE_MAPS_EMBED_KEY;
 const bodyParser = require('body-parser');
+const path = require('path');
+
 const yelpSearch = "https://api.yelp.com/v3/businesses/search?";
 const googlePlacesSearch = "https://maps.googleapis.com/maps/api/place/textsearch/json?&key="+googlePlacesKey;
 const googleMapsSearch = "https://www.google.com/maps/embed/v1/directions?key="+googleMapsKey;
@@ -19,9 +21,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 if (process.env.NODE_ENV === 'production') {
 }
-
-app.use(express.static('react-ui/build'));
-
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get('/api/search/:latitude/:longitude/:query', (req, res) => {
   var query = "term="+req.params.query;
@@ -56,6 +56,10 @@ app.get('/api/:search', (req, res) => {
         'x-sent': true
     }
   };
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/react-ui/build/index.html'));
+  });
   
   var fileName = req.params.search;
   res.sendFile(fileName, options, function (err) {
