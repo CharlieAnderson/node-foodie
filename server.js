@@ -57,9 +57,8 @@ app.get('/api/:search', (req, res) => {
     }
   };
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+'/react-ui/build/index.html'));
-  });
+  app.get('*', (req, res) => res.sendFile(path.resolve('build', 'index.html')));
+
   
   var fileName = req.params.search;
   res.sendFile(fileName, options, function (err) {
