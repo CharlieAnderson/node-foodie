@@ -33,7 +33,6 @@ $foodie-blue: RGBA(25, 181, 254, 1);
 .App-title {
   display: inline;
   vertical-align: middle;
-
   margin: 10px;
   font-size: 2.5em;
   font-family: Pacifico;
@@ -42,6 +41,26 @@ $foodie-blue: RGBA(25, 181, 254, 1);
 .App-intro {
   font-size: large;
 }
+
+@media only screen and (max-width: 768px)  {
+  .App-logo  {
+    height:30px;
+  }
+  .App-logo:nth-of-type(1) {
+    display:none;
+  }
+
+  .App-title {
+    font-size: 1.4em;
+    margin: 5px;
+  }
+
+  .App-header {
+    height: 30px;
+  }
+
+}
+
 
 @keyframes App-logo-spin-clockwise {
   from { transform: rotate(0deg); }

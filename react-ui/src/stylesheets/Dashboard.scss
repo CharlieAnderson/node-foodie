@@ -3,7 +3,7 @@ $foodie-blue: RGBA(25, 181, 254, 1);
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 .Dashboard {
-    width: 80%;
+    width: 90%;
     height: 600px;
     margin: 20px auto;
     color: white;
@@ -30,3 +30,20 @@ $foodie-blue: RGBA(25, 181, 254, 1);
     border-bottom-right-radius: 5px;
     box-shadow: 0 5px 15px 0 RGBA(25, 181, 254, 1.00);
 }
+
+
+@media only screen and (max-width: 768px)  {
+    .Dashboard {
+        height: 400px;
+        margin: 10 px;
+        width: 90%;
+    }
+
+    .Dashboard-header {
+        height: 1em;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .Dashboard-content {
+    }
+  }

@@ -1,6 +1,6 @@
 /*Resize the wrap to see the search bar change!*/
 .SearchBar {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   position: relative; }
 
@@ -36,3 +36,15 @@
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer; }
+
+@media only screen and (max-width: 768px) {
+  .SearchBar-input {
+    padding: 0 5px;
+    width: 70%;
+    font-size: 14px; }
+  .SearchBar-submit {
+    width: 70px;
+    font-size: 14px;
+    border: 3px solid RGBA(244, 102, 176, 1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 RGBA(244, 102, 176, 1); } }

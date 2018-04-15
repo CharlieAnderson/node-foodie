@@ -60,15 +60,6 @@ body {
 
 }
 
-
-@media only screen and (min-width: 768px)  {
-    .Widget-map:hover {
-        //transform: scale(1.55) translate(0, -5px);
-        width: 24em;
-        height: 24em;
-    }
-  }
-
 .Widget:nth-child(1) {
     animation-delay: 0s;
     animation: fadein 1s;
@@ -132,6 +123,20 @@ body {
     height: 12em;
 }
 
+
+// Big screens only ============================================
+@media only screen and (min-width: 768px)  {
+    .Widget-map:hover {
+        //transform: scale(1.55) translate(0, -5px);
+        width: 24em;
+        height: 24em;
+    }
+  }
+
+
+
+
+// keyframes for animations ====================================
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }

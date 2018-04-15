@@ -5,7 +5,7 @@ $foodie-blue: RGBA(25, 181, 254, 1);
 
 
   .SearchBar {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     position: relative;
   }
@@ -38,7 +38,7 @@ $foodie-blue: RGBA(25, 181, 254, 1);
     box-shadow: 0 2px 5px 0 RGBA(25, 181, 254, 1.00);
     text-align: center;
     outline: none;
-    color: white;
+    color:white;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -46,3 +46,19 @@ $foodie-blue: RGBA(25, 181, 254, 1);
     cursor: pointer;
   }
   
+  @media only screen and (max-width: 768px)  {
+    .SearchBar-input {
+      padding: 0 5px;
+      width: 70%;
+      font-size:14px;
+    }
+
+    .SearchBar-submit {
+      width: 70px;
+      font-size: 14px;
+      border: 3px solid $foodie-pink;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px 0 $foodie-pink;
+    }
+
+  }
