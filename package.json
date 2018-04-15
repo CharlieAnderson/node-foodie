@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "yarn server",
+    "start": "node server.js",
     "client": "cd react-ui && yarn start",
     "server": "node server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
