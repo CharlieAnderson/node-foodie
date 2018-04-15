@@ -19,9 +19,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
 
-if (process.env.NODE_ENV === 'production') {
-}
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'react-ui/build')));
 
 app.get('/api/search/:latitude/:longitude/:query', (req, res) => {
   var query = "term="+req.params.query;
@@ -57,9 +55,10 @@ app.get('/api/:search', (req, res) => {
     }
   };
 
-  app.get('*', (req, res) => res.sendFile(path.resolve('build', 'index.html')));
-
-  
+  //app.get('*', (req, res) => res.sendFile(path.resolve('build', 'index.html')));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/react-ui/build/index.html'));
+  });
   var fileName = req.params.search;
   res.sendFile(fileName, options, function (err) {
     if (err) {
