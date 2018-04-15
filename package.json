@@ -6,8 +6,8 @@
     "client": "cd react-ui && yarn start",
     "server": "node server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
-    "heroku-postbuild": "cd react-ui/ && yarn install && yarn install --only=dev --no-shrinkwrap && yarn run build"
-  },
+    "heroku-postbuild": "cd react-ui/ && yarn --production=false && yarn build"
+    },
   "dependencies": {
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.0",
