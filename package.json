@@ -2,7 +2,7 @@
   "name": "example-create-react-app-express",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \"yarn server\" \"yarn client\"",
+    "start": "yarn server",
     "client": "cd react-ui && yarn start",
     "server": "node server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
