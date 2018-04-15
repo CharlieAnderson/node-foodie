@@ -1,5 +1,6 @@
 {
-    "root": "build/",
+    "root": "/react-ui/build/",
+    "clean_urls": false,
     "routes": {
       "/**": "index.html"
     }
