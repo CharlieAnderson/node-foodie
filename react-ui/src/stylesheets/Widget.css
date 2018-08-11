@@ -43,11 +43,6 @@ body {
     }
 
     */ }
-  .Widget .Widget-img:hover {
-    transform: scale(1.55) translate(0, -5px);
-    cursor: pointer; }
-  .Widget .Widget-img:active {
-    transform: scale(0.95) translate(0, 0px); }
 
 .Widget:nth-child(1) {
   animation-delay: 0s;
